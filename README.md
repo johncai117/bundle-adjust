@@ -1,7 +1,8 @@
-# Bundle Adjustment
-Bundle Adjustment for 3D Vision
+# Bundle Adjustment for 3D Computer Vision
 
 This project is used for bundle adjustment - a non-linear set of refinement of cameras for 3D computer vision. Given a set of measured images parameters, this method aims to create a reconstruction that minimizes the reprojection error.
+
+This has been a very interesting, but less code-heavy project. However, the math required to understand the optimization algorithm is non-trivial. In order to solve the problem in a limited amount of time, the Levenberg-Marquardt algorithm must be implemented (which I have done). For further optimization, one must exploit the sparse structure of the matrices.
 
 To use:
 ```
